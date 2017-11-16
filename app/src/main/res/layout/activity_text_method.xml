@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.channelst.navigationbardemo.TextMethodActivity">
+
+    <LinearLayout
+        android:id="@+id/tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+
+
+        <!-- home -->
+        <LinearLayout
+            android:id="@+id/tab_home_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="0px"
+                android:layout_gravity="center"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/tab_home_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tab_home_img_selector" />
+
+                <ImageView
+                    android:id="@+id/tab_home_badge"
+                    android:layout_width="10px"
+                    android:layout_height="10px"
+                    android:layout_gravity="top|end"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/nav_home_mes_y"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tab_home_title"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="家"
+                android:textColor="@color/home_tab_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- scene -->
+        <LinearLayout
+            android:id="@+id/tab_scene_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="0px"
+                android:layout_gravity="center"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/tab_scene_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tab_scene_img_selector" />
+
+                <ImageView
+                    android:id="@+id/tab_scene_badge"
+                    android:layout_width="10px"
+                    android:layout_height="10px"
+                    android:layout_gravity="top|end"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/nav_home_mes_y"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tab_scene_title"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="场景"
+                android:textColor="@color/home_tab_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <!-- find -->
+        <LinearLayout
+            android:id="@+id/tab_find_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="0px"
+                android:layout_gravity="center"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/tab_find_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tab_found_img_selector" />
+
+                <ImageView
+                    android:id="@+id/tab_find_badge"
+                    android:layout_width="10px"
+                    android:layout_height="10px"
+                    android:layout_gravity="top|end"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/nav_home_mes_y"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tab_find_title"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="发现"
+                android:textColor="@color/home_tab_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <!-- me -->
+        <LinearLayout
+            android:id="@+id/tab_me_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="?selectableItemBackground"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="30dp"
+                android:layout_height="0px"
+                android:layout_gravity="center"
+                android:layout_weight="2">
+
+                <ImageView
+                    android:id="@+id/tab_me_icon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/tab_personal_img_selector" />
+
+                <ImageView
+                    android:id="@+id/tab_me_badge"
+                    android:layout_width="10px"
+                    android:layout_height="10px"
+                    android:layout_gravity="top|end"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/nav_home_mes_y"
+                    android:visibility="invisible" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tab_me_title"
+                android:layout_width="match_parent"
+                android:layout_height="0px"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:lines="1"
+                android:text="我的"
+                android:textColor="@color/home_tab_text_color"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_above="@id/tab_layout"/>
+
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/line"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+</RelativeLayout>
